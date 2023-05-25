@@ -9,126 +9,184 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="../iconos/favicon-16x16.png">
-  
-    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="icon" type="image/png" href="./iconos/favicon-16x16.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/Css/style.css">
 </head>
 
 <body>
-    <header class="fondo1">
-        <nav>
-            <div>
-                <ul class="navbot">
-                    <li><a href="./Inicio.html">Inicio</a></li>
-                    <li><a href="./Secciones.html">Secciones</a></li>
-                    <li><a href="./Noticias.html">Noticias</a></li>
-                    <li><a href="./Sugerencias.html">Sugerencias</a></li>
-                    <li><a href="./Contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="nombrelogo">
-                <img class="icono" src="../Imagenes/moto_blanco_negro.png" height="50%" width="50%" alt="Moto_ruta">
-                <h1 class="logotipo">Moto Viajeros en Ruta</h1>
-            </div>
-        </nav>
 
-    </header>
-    <main>
-        <section>
+    <div class="container">
+
+        <header>
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/page/Inicio.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/page/Secciones.html">Secciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/page/Noticias.html">Noticias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/page/Sugerencias.html">Sugerencias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/page/Contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+
+            <div class="titulo">
+                <img class="icono" src="/Imagenes/moto_blanco_negro.png" alt="Moto_ruta">
+                <h1>Moto Viajeros en Ruta</h1>
+            </div>
+
+        </header>
+
+        <div class="title">
             <h2>Novedades</h2>
 
-            <div class="section1">
-                <img class="foto_art" src="../Imagenes/Charly_Sinewan.jpg" alt="Charly_Sinewan">
-                <h3>Charly Sinewan en Argentina</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto eum sapiente, ducimus
-                    delectus dolorem necessitatibus voluptatibus excepturi maxime aperiam est consequatur dolor totam
-                    doloribus earum provident nemo officia incidunt praesentium repellendus illum accusamus. Autem, a
-                    sed voluptas doloremque impedit libero ipsam quas. Vel impedit voluptate porro ratione laboriosam
-                    repellat dolore inventore non, doloribus unde, aut cum eius rerum nostrum odio. Ipsum facere harum,
-                    modi quos qui neque deleniti doloribus nihil totam quas aperiam. Necessitatibus esse, saepe eveniet
-                    harum iste accusantium optio, aut magni a est voluptatem possimus dicta repellat odit delectus! Iste
-                    debitis odit fugit quod quibusdam, vel magnam inventore.</p>
-            </div>
+            <script class="diayhora">
+                //<![CDATA[
+                function makeArray() {
+                    for (i = 0; i < makeArray.arguments.length; i++)
+                        this[i + 1] = makeArray.arguments[i];
+                }
+                var months = new makeArray('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo',
+                    'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre');
+                var date = new Date();
+                var day = date.getDate();
+                var month = date.getMonth() + 1;
+                var yy = date.getYear();
+                var year = (yy < 1000) ? yy + 1900 : yy;
+                document.write("Hoy es " + day + " de " + months[month] + " del " + year);
+      //]]>
+            </script>
 
-            <div class="section2">
-                <img class="foto_art" src="../Imagenes/Pablo_Imhoff.jpg" alt="Pablo_Imhoff">
-                <h3>El futuro de Pablo Imhoff</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos similique nostrum quis blanditiis
-                    non temporibus adipisci unde dolore iure explicabo dicta perferendis commodi, nesciunt reiciendis
-                    repellendus ducimus? Nostrum molestiae, magni earum soluta, eos nulla eius reprehenderit obcaecati
-                    non aliquam id expedita, autem at velit culpa minima et libero ipsam molestias blanditiis voluptates
-                    quam repellat dolorem! Animi molestias aspernatur voluptatibus voluptatum eaque reprehenderit eum
-                    harum facilis autem aut? Mollitia incidunt iure doloremque ut magnam, quam tempore assumenda
-                    accusamus quis dignissimos culpa a temporibus laborum magni officia! Adipisci odit facilis ipsa et
-                    neque, voluptas dolore praesentium alias ipsam, corrupti, consectetur inventore totam.</p>
-            </div>
+        </div>
+
+        <article class="article1">
+            <img class="foto_art" src="/Imagenes/charly_sinewan.jpg" alt="Charly_Sinewan">
+            <h3>Charly Sinewan en Argentina</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto eum sapiente, ducimus
+                delectus dolorem necessitatibus voluptatibus excepturi maxime aperiam est consequatur dolor
+                totam
+                doloribus earum provident nemo officia incidunt praesentium repellendus illum accusamus. Autem,
+                a
+                sed voluptas doloremque impedit libero ipsam quas. Vel impedit voluptate porro ratione
+                laboriosam
+                repellat dolore inventore non, doloribus unde, aut cum eius rerum nostrum odio. Ipsum facere
+                harum,
+                modi quos qui neque deleniti doloribus nihil totam quas aperiam. Necessitatibus esse, saepe
+                eveniet
+                harum iste accusantium optio, aut magni a est voluptatem possimus dicta repellat odit delectus!
+                Iste
+                debitis odit fugit quod quibusdam, vel magnam inventore.</p>
+        </article>
+
+        <article class="article2">
+            <img class="foto_art" src="/Imagenes/pablo_imhoff.jpg" alt="Pablo_Imhoff">
+            <h3>El futuro de Pablo Imhoff</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos similique nostrum quis blanditiis
+                non temporibus adipisci unde dolore iure explicabo dicta perferendis commodi, nesciunt
+                reiciendis
+                repellendus ducimus? Nostrum molestiae, magni earum soluta, eos nulla eius reprehenderit
+                obcaecati
+                non aliquam id expedita, autem at velit culpa minima et libero ipsam molestias blanditiis
+                voluptates
+                quam repellat dolorem! Animi molestias aspernatur voluptatibus voluptatum eaque reprehenderit
+                eum
+                harum facilis autem aut? Mollitia incidunt iure doloremque ut magnam, quam tempore assumenda
+                accusamus quis dignissimos culpa a temporibus laborum magni officia! Adipisci odit facilis ipsa
+                et
+                neque, voluptas dolore praesentium alias ipsam, corrupti, consectetur inventore totam.</p>
+        </article>
 
 
 
-        </section>
 
-        <aside class="fondo3">
-
-            <div class="diayhora">
-                <script>
-                    //<![CDATA[
-                    function makeArray() {
-                        for (i = 0; i < makeArray.arguments.length; i++)
-                            this[i + 1] = makeArray.arguments[i];
-                    }
-                    var months = new makeArray('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo',
-                        'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre');
-                    var date = new Date();
-                    var day = date.getDate();
-                    var month = date.getMonth() + 1;
-                    var yy = date.getYear();
-                    var year = (yy < 1000) ? yy + 1900 : yy;
-                    document.write("Hoy es " + day + " de " + months[month] + " del " + year);
-                    //]]>
-                </script>
-
-
-            </div>
+        <aside class="sidebar">
 
             <iframe class="video" src="https://www.youtube.com/embed/bgpRJf3AicE" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen>
             </iframe>
-            <div>
-                <img class="img_aside" src="../Imagenes/moto_ocaso.jpg" alt="Moto_ruta">
+
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/Imagenes/Ruta40.jpg" class="d-block w-100" alt="Ruta40">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/Imagenes/moto_ocaso.jpg" class="d-block w-100" alt="moto_ocaso">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/Imagenes/acocho_viajeros.jpg" class="d-block w-100" alt="acocho_viajeros">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
 
         </aside>
 
         <div class="publicidad">
-            <img src="../Imagenes/publicita-aqui.gif" alt="publicidad">
+            <img src="/Imagenes/publicita-aqui.gif" alt="publicidad">
         </div>
 
-    </main>
+        <footer class="footer">
 
+            <div class="redes">
+                <span class="tw"><a href="https://twitter.com/?lang=es"><img
+                            src="https://img.icons8.com/color/48/null/twitter-squared.png" alt="twitter" /></a></span>
+                <span class="in"><a href="https://www.instagram.com"><img
+                            src="https://img.icons8.com/fluency/48/null/instagram-new.png" alt="instagram" /></a></span>
+                <span class="fc"><a href="https://www.facebook.com"><img
+                            src="https://img.icons8.com/color/48/null/facebook.png" alt="facebook" /></a></span>
+            </div>
+            <hr>
+            <!--https://www.youtube.com/watch?v=eYQ2TbL_Sgg-->
+            <!--<a target="_blank" href="https://icons8.com/icon/Xy10Jcu1L2Su/instagram">Instagram icon by Icons8</a>-->
+            <!--<a target="_blank" href="https://icons8.com/icon/13912/facebook">Facebook icon by Icons8</a>-->
+            <!--<a target="_blank" href="https://icons8.com/icon/60469/twitter-cuadrado">Twitter cuadrado icon by Icons8</a>-->
+            <div class="derechos">
+                <p>Copyright© Todos los derechos reservados</p>
+                <a href="https://balsamiq.cloud/sj8hof2/pp0jxla" target="_blank" rel="noopener noreferrer">Ir a los
+                    Wireframes</a>
+            </div>
+        </footer>
 
-    <footer class="fondo4">
-        <hr>
-        <div class="redes">
-            <span class="tw"><a href="https://twitter.com/?lang=es"><img
-                        src="https://img.icons8.com/color/48/null/twitter-squared.png" alt="twitter" /></a></span>
-            <span class="in"><a href="https://www.instagram.com"><img
-                        src="https://img.icons8.com/fluency/48/null/instagram-new.png" alt="instagram" /></a></span>
-            <span class="fc"><a href="https://www.facebook.com"><img
-                        src="https://img.icons8.com/color/48/null/facebook.png" alt="facebook" /></a></span>
-        </div>
-        <hr>
-        <!--https://www.youtube.com/watch?v=eYQ2TbL_Sgg-->
-        <!--<a target="_blank" href="https://icons8.com/icon/Xy10Jcu1L2Su/instagram">Instagram icon by Icons8</a>-->
-        <!--<a target="_blank" href="https://icons8.com/icon/13912/facebook">Facebook icon by Icons8</a>-->
-        <!--<a target="_blank" href="https://icons8.com/icon/60469/twitter-cuadrado">Twitter cuadrado icon by Icons8</a>-->
-        <div class="derechos">
-            <p>Copyright© Todos los derechos reservados</p>
-            <a href="https://balsamiq.cloud/sj8hof2/pp0jxla" target="_blank" rel="noopener noreferrer">Ir a los
-                Wireframes</a>
-        </div>
-    </footer>
+    </div>
+
 
 </body>
 
