@@ -66,6 +66,9 @@ article img {
     width: 90%;
 }
 
+.article1 H3{ text-align: center;}
+.article2 H3{ text-align: center;}
+
 aside iframe {
     width: 100%;
 }
@@ -80,6 +83,7 @@ aside iframe {
 
 .container {    
     width: 100%;
+    max-width: fit-content;
     text-align: center;
     display: grid;
     grid-template-columns: 100%;
@@ -124,6 +128,7 @@ footer {
 @media (min-width: 768px) {
     .container {       
         text-align: center;
+        max-width: fit-content;
         width: 100%;
         display: grid;
         grid-template-columns: 34% 33% 33%;
@@ -139,6 +144,7 @@ footer {
 @media (min-width: 1024px) {
     .container {       
         text-align: center;
+        max-width: fit-content;
         width: 100%;
         display: grid;
         grid-template-columns: 34% 33% 33%;
@@ -154,10 +160,16 @@ footer {
 /*Aqui comienza CSS de Secciones*/
 
 .viajeros img {
+    padding-top: 1.5em;
     width: 15em
+}
+.viajeros div {
+    padding: 1em;
 }
 
 .entrevistas img {
+    padding-top: 1em;
+    padding-bottom: 1.5em;
     width: 15em;
     height: auto;
 }
@@ -168,6 +180,7 @@ footer {
 }
 
 .evento img {
+    padding-top: 1.5em;
     width: 80%;
     height: auto;
 }
@@ -193,6 +206,9 @@ footer {
     grid-area: articulos;
     background-color: rgb(230, 230, 240);
 }
+.ruta_evento{
+    padding-top: 1.5em;
+}
 
 .asidebar {
     grid-area: publicidad;
@@ -206,6 +222,7 @@ footer {
 
 .gridcontainer {
     display: grid;
+    max-width: fit-content;
     gap: 10px;
     grid-template-columns: 100%;
     grid-template-areas:
@@ -214,10 +231,9 @@ footer {
         "articulos"
         "publicidad"
         "footer";
-
 }
 
-@media (min-width:700px) {
+@media (min-width:1024px) {
     .gridcontainer {
         grid-template-columns: 75% 23%;
         grid-template-areas:
