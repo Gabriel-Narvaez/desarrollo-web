@@ -1,0 +1,125 @@
+
+.grid_container {
+    width: 100%;
+    max-width: fit-content;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "encabezado"
+        "title"
+        "article1"
+        "article2"
+        "sidebar"
+        "publicidad"
+        "footer"
+}
+
+header {
+    grid-area: encabezado;
+}
+
+.title {
+    grid-area: title;
+}
+
+.article1 {
+    grid-area: article1;
+}
+
+.article2 {
+    grid-area: article2;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+.publicidad {
+    grid-area: publicidad;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media (min-width: $tablet) {
+    .grid_container {
+        text-align: center;
+        max-width: fit-content;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 34% 33% 33%;
+        grid-template-areas:
+            "encabezado encabezado encabezado"
+            "title title title"
+            "article1 article2 sidebar"
+            "publicidad publicidad publicidad"
+            "footer footer footer"
+    }
+}
+
+@media (min-width: $desktop) {
+    .grid_container {
+        text-align: center;
+        max-width: fit-content;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 34% 33% 33%;
+        grid-template-areas:
+            "encabezado encabezado encabezado"
+            "title title title"
+            "article1 article2 sidebar"
+            "publicidad publicidad publicidad"
+            "footer footer footer"
+    }
+}
+
+.gridcontainer {
+    display: grid;
+    max-width: fit-content;
+    gap: 10px;
+    grid-template-columns: 100%;
+    grid-template-areas:
+
+        "header"
+        "articulos"
+        "publicidad"
+        "footer";
+}
+
+.header {
+    grid-area: header;
+    background-color:$coloruno;
+}
+
+.articulo {
+    grid-area: articulos;
+    background-color: $colordos;
+}
+
+.ruta_evento {
+    padding-top: 1.5em;
+}
+
+.asidebar {
+    grid-area: publicidad;
+    background-color: $colordos;
+}
+
+.footer {
+    grid-area: footer;
+    background-color:$coloruno;
+}
+
+@media (min-width:$desktop) {
+    .gridcontainer {
+        grid-template-columns: 75% 23%;
+        grid-template-areas:
+            "header header"
+            "articulos publicidad"
+            "articulos publicidad"
+            "articulos publicidad"
+            "footer footer";
+    }
+}

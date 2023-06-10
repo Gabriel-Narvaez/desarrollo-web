@@ -1,0 +1,26 @@
+.titulo {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 2em;
+    color:$colorcuatro;
+}
+
+.viajeros {
+    margin-left: 2.5em;
+    display: flex;
+    flex-direction: row;
+    width: 2.5em;
+    gap: 5em
+}
+.entrevistas {
+    display: flex;
+    flex-direction: row;
+    gap: 5em
+}
+.ruta_evento {
+    display: flex;
+    flex-direction: row;
+    gap: 5em
+}

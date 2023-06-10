@@ -5,110 +5,152 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="viajes, viajes-en-moto, rutas-en-moto, aventuras-en-moto, motoviajeros">
+    <meta name="description" content="motoviajeros, consejos-viajar, noticias-motos, descubre-rutas, destinos">
     <title>Noticias</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="../iconos/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="/iconos/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="stylesheet" href="../Css/style.css">
 </head>
 
-<body class="fondo1">
-    <header class="fondo1">
-        <nav class="navegacion">
-            <div>
-                <ul class="navbot">
-                    <li><a href="./Inicio.html">Inicio</a></li>
-                    <li><a href="./Secciones.html">Secciones</a></li>
-                    <li><a href="./Noticias.html">Noticias</a></li>
-                    <li><a href="./Sugerencias.html">Sugerencias</a></li>
-                    <li><a href="./Contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="nombrelogo">
-                <img class="icono" src="../Imagenes/moto_blanco_negro.png" height="50%" width="50%" alt="Moto_ruta">
-                <h1 class="logotipo">Moto Viajeros en Ruta</h1>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../page/Inicio.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../page/Secciones.html">Secciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../page/Noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../page/Sugerencias.html">Sugerencias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../page/Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
+        <div class="titulo">
+            <img class="icono" src="../Imagenes/moto-blanco-negro.svg" alt="Moto_ruta">
+            <h1>Moto Viajeros en Ruta</h1>
+        </div>
     </header>
-    <main class="fondo2">
-        <section>
-            <h2>Noticias</h2>
+    <main>
+        <h2>Noticias</h2>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-3">
+                        <img src="../Imagenes/imgnoticias/bajajtriumph.jpg" class="card-img-top" alt="bajajtriumph">
+                        <div class="card-body">
+                            <h5 class="card-title">La Sociedad Bajaj-Triumph</h5>
+                            <p class="card-text">Bajaj Triumph es una sociedad que ha sido muy comentada en el mundo de
+                                las motocicletas,
+                                especialmente en aquellos países donde ambas marcas tienen presencia. La unión entre las
+                                compañías ha
+                                dado como resultado una importante expansión en el mercado de motocicletas de alta gama.
+                            </p>
+                            <a href="#" class="btn btn-primary">Leer más</a>
+                            <a href="ruta-de-comentarios.html" class="btn btn-flag">Dejar un comentario<span class="comment-counter"></span></a>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <img src="../Imagenes/imgnoticias/Salonmoto.jpg" class="card-img-top" alt="salonmoto">
+                        <div class="card-body">
+                            <h5 class="card-title">Salon de la moto 2023</h5>
+                            <p class="card-text">El Salón de la Moto en Argentina 2023 es uno de los eventos más
+                                esperados por los amantes de las dos
+                                ruedas entodo el país. Este evento, que se celebra cada dos años, reúne a las
+                                principales marcas de
+                                motocicletas del mundo, así como a los aficionados, expertos y profesionales del sector.
+                            </p>
+                            <a href="#" class="btn btn-primary">Leer más</a>
+                            <a href="ruta-de-comentarios.html" class="btn btn-flag">Dejar un comentario<span class="comment-counter"></span></a>
+                        </div>
+                    </div>
+                   
+                        <div class="card mb-3">
+                            <img src="../Imagenes/imgnoticias/duke3902024.jpg" class="card-img-top" alt="duke_390">
+                            <div class="card-body">
+                                <h5 class="card-title">Filtran nueva KTM DUKE 390 2024</h5>
+                                <p class="card-text">Como es habitual en cada lanzamiento, la KTM Duke 390 del 2024
+                                    presentará un diseño renovado y
+                                    actualizado, que se espera sea más deportivo y agresivo que las versiones
+                                    anteriores. Se
+                                    rumorea que
+                                    la nueva moto presentará un aspecto más elegante, con nuevas líneas y formas, así
+                                    como
+                                    con mejores
+                                    acabados.</p>
+                                <a href="#" class="btn btn-primary">Leer más</a>
+                                <a href="ruta-de-comentarios.html" class="btn btn-flag">Dejar un comentario<span class="comment-counter"></span></a>
+                            </div>
+                        </div>
+                </div>
 
-            <div class="sectionNot1">
-                <h3>La Sociedad Bajaj-Triumph</h3>
-                <img class="foto_art_not" src="../Imagenes/imgnoticias/bajajtriumph.jpg" alt="Bajaj_Triumph">
-                <article>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto eum sapiente, ducimus
-                    delectus dolorem necessitatibus voluptatibus excepturi maxime aperiam est consequatur dolor totam
-                    doloribus earum provident nemo officia incidunt praesentium repellendus illum accusamus. Autem, a
-                    sed voluptas doloremque impedit libero ipsam quas. Vel impedit voluptate porro ratione laboriosam
-                    repellat dolore inventore non, doloribus unde, aut cum eius rerum nostrum odio. Ipsum facere harum,
-                    modi quos qui neque deleniti doloribus nihil totam quas aperiam. Necessitatibus esse, saepe eveniet
-                    harum iste accusantium optio, aut magni a est voluptatem possimus dicta repellat odit delectus! Iste
-                    debitis odit fugit quod quibusdam, vel magnam inventore.</article>
+                <div class="col-lg-4 d-flex align-items-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Publicidad</h5>
+                            <img src="../Imagenes/descarga.jpg" class="card-img-top" alt="publicidad">
+                            <p class="card-text">Breve descripción de la publicidad.</p>
+                            <a href="#" class="btn btn-primary">Ir a sitio web</a>
+                            <br>
+                            <br>
+                            <div class="card-body">
+                                <h5 class="card-title">Publicidad</h5>
+                                <img src="../Imagenes/descarga.jpg" class="card-img-top" alt="publicidad">
+                                <p class="card-text">Breve descripción de la publicidad.</p>
+                                <a href="#" class="btn btn-primary">Ir a sitio web</a>
+                                <br>
+                                <br>
+                                <div class="card-body">
+                                    <h5 class="card-title">Publicidad</h5>
+                                    <img src="../Imagenes/descarga.jpg" class="card-img-top" alt="publicidad">
+                                    <p class="card-text">Breve descripción de la publicidad.</p>
+                                    <a href="#" class="btn btn-primary">Ir a sitio web</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <div class="sectionNot2">
-                <h3>Salon de la moto 2023</h3>
-                <img class="foto_art_not" src="../Imagenes/imgnoticias/Salonmoto.jpg" alt="Salon_moto_2023">
-                <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos similique nostrum quis blanditiis
-                    non temporibus adipisci unde dolore iure explicabo dicta perferendis commodi, nesciunt reiciendis
-                    repellendus ducimus? Nostrum molestiae, magni earum soluta, eos nulla eius reprehenderit obcaecati
-                    non aliquam id expedita, autem at velit culpa minima et libero ipsam molestias blanditiis voluptates
-                    quam repellat dolorem! Animi molestias aspernatur voluptatibus voluptatum eaque reprehenderit eum
-                    harum facilis autem aut? Mollitia incidunt iure doloremque ut magnam, quam tempore assumenda
-                    accusamus quis dignissimos culpa a temporibus laborum magni officia! Adipisci odit facilis ipsa et
-                    neque, voluptas dolore praesentium alias ipsam, corrupti, consectetur inventore totam.</article>
-            </div>
-
-            <div class="sectionNot3">
-                <h3>Filtran nueva KTM DUKE 390 2024</h3>
-                <img class="foto_art_not" src="../Imagenes/imgnoticias/duke3902024.jpg" alt="duke_390">
-                <article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A deserunt debitis magni eveniet est
-                    dicta quasi soluta vitae quod, magnam optio nemo veniam sunt itaque dolorem quos sit non odio ipsam,
-                    inventore culpa amet architecto! Quia, eum! Cum at error architecto excepturi et non nihil
-                    perspiciatis. Praesentium et natus perferendis sequi aspernatur, beatae minima quo laudantium esse
-                    similique officia ipsam, vitae minus fuga corporis tempora dolor provident modi reiciendis alias
-                    magni laboriosam libero, repellat quod! Soluta vitae eaque recusandae est voluptas maxime ad
-                    laudantium nobis officia, autem perferendis doloremque earum consequuntur amet doloribus beatae quo
-                    repellat ea enim illum? Deleniti.</article>
-            </div>
-
-        </section>
-
-        <aside class="anunciate">
-
-            <div>
-                <img src="../Imagenes/descarga.jpg" alt="publicidad">
-            </div>
-
-            <div>
-                <img src="../Imagenes/descarga.jpg" alt="publicidad">
-            </div>
-
-            <div>
-                <img src="../Imagenes/descarga.jpg" alt="publicidad">
-            </div>
-
-            <div>
-                <img src="../Imagenes/descarga.jpg" alt="publicidad">
-            </div>
-
-        </aside>
     </main>
 
 
-    <footer class="fondo4">
-        <hr>
+    <footer class="footer">
         <div class="redes">
             <span class="tw"><a href="https://twitter.com/?lang=es"><img
-                        src="https://img.icons8.com/color/48/null/twitter-squared.png" /></a></span>
+                        src="https://img.icons8.com/color/48/null/twitter-squared.png" alt="twitter" /></a></span>
             <span class="in"><a href="https://www.instagram.com"><img
-                        src="https://img.icons8.com/fluency/48/null/instagram-new.png" /></a></span>
+                        src="https://img.icons8.com/fluency/48/null/instagram-new.png" alt="instagram" /></a></span>
             <span class="fc"><a href="https://www.facebook.com"><img
-                        src="https://img.icons8.com/color/48/null/facebook.png" /></a></span>
+                        src="https://img.icons8.com/color/48/null/facebook.png" alt="facebook" /></a></span>
         </div>
         <hr>
         <!--https://www.youtube.com/watch?v=eYQ2TbL_Sgg-->
@@ -116,8 +158,8 @@
         <!--<a target="_blank" href="https://icons8.com/icon/13912/facebook">Facebook icon by Icons8</a>-->
         <!--<a target="_blank" href="https://icons8.com/icon/60469/twitter-cuadrado">Twitter cuadrado icon by Icons8</a>-->
         <div class="derechos">
-            <p>Copyright© Todos los derechos reservados</p>
-            <a href="https://balsamiq.cloud/sj8hof2/pp0jxla" target="_blank" rel="noopener noreferrer">Ir a los
+            <div>Copyright© Todos los derechos reservados</div>
+            <a class="btn btn-primary" href="https://balsamiq.cloud/sj8hof2/pp0jxla" role="button">Ir a los
                 Wireframes</a>
         </div>
     </footer>

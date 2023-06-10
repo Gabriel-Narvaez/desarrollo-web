@@ -1,0 +1,33 @@
+button{
+    margin-top: 10px;
+    background-color:$coloruno;
+    font-weight:600;
+
+}
+
+.btn-flag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    margin-left:2rem ;
+    background-color:$colorcuatro;
+    color: $colortres;
+    position: relative;
+    border-radius: 0;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -1rem;
+      width: 0;
+      height: 0;
+      border-top: 1rem solid transparent;
+      border-bottom: 1rem solid transparent;
+      border-right: 1rem solid $colorcuatro;
+    }
+  }
+  
+  .flag-text {
+    position: relative;
+    z-index: 1;
+  }
