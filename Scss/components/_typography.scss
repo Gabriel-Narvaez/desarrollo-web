@@ -5,32 +5,33 @@ header h1 {
     font-size: 1.8em;
     font-weight: 500;
     text-align: center;
+    color: map-get($header-colors, h1);
 }
 
 h2 {
     margin: 0;
     padding: 0.2em;
     width: 100%;
-    font-size: 2em;
-    font-weight: 1000;
+    font-size: 2.5em;
+    font-weight: 600;
     margin-bottom: 2em;
     text-align: center;
+    color: map-get($header-colors, h2);
     background-color:$colordos;  
     transition: color 0.3s ease;
     
     &:hover{color: $colorsiete;
-    font-size: 2.3em;}
-    
-    
+    }       
 }
 
 h3 {
     margin: 0;
     padding: 1em;
     width: 100%;
-    font-size: 1.3em;
+    font-size: 1.8em;
+    font-weight: 480;  
     text-align: left;
-    color: $colorcuatro;
+    color: map-get($header-colors, h3);
     &:hover{color: $coloruno;
     font-size: 1.5em;}
 }
@@ -43,8 +44,9 @@ h3 {
     
 }
 h4 {
+    color: map-get($header-colors, h4);
     transition: color 0.3s ease;
-    font-weight: 700;
+    font-weight: 450;
   
     &:hover {
       color: $colorocho;

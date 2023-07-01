@@ -6,21 +6,77 @@
     font-size: 2em;
     color:$colorcuatro;
 }
+    
+.viajeros-links {
+      display: flex;    
+      justify-content:space-between;
+      gap: 5em;
+    }
+    
+.entrevistas-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      gap: 5em;
+    }
+    
+.entrevista {
+      display: block;
+      margin: 5 auto;
+      margin-left: 2em;
+      width: 25%;
+      max-width: 100%;
+      height: auto;
+    }
+.publicidad2 img{
+  margin-bottom: 50px;
+  width: 370px; 
+  height: auto;
+}
+    
+.ruta-semana-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5em;
+      margin-left: 2em;
+    }
 
-.viajeros {
-    margin-left: 2.5em;
-    display: flex;
-    flex-direction: row;
-    width: 2.5em;
-    gap: 5em
-}
-.entrevistas {
-    display: flex;
-    flex-direction: row;
-    gap: 5em
-}
-.ruta_evento {
-    display: flex;
-    flex-direction: row;
-    gap: 5em
+    
+@media (max-width: $tablet) {
+  .secciones{ 
+    .viajeros-links {
+          display: flex;    
+          flex-direction: column;
+          gap: 5em;
+        }
+        
+    .entrevistas-container {
+          display: flex;
+          flex-direction: column;
+          gap: 5em;
+        }
+        
+    .entrevista img {
+          display: block;
+          margin: 5 auto;
+          margin-left: 2em;
+          max-width: 100%;
+          height: auto;
+        }
+        
+    .ruta-semana-info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 5em;
+          margin-left: 2em;
+        }
+        
+    .carousel {          
+          width: 100%;
+          height: auto;
+          margin-left: 2em;
+        }
+      }
 }

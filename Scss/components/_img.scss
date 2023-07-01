@@ -4,10 +4,15 @@ article img {
 .publicidad img {
     width: 90%;
     padding: 1.5em;
+    animation: moveGif 3s infinite;
 }
+.carousel img{
+    width: 80%;
+    padding: 1.5em;}
+
 .viajeros img {
     padding-top: 1.5em;
-    width: 15em
+    width: 20em
 }
 .entrevistas img {
     padding-top: 1em;

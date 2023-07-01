@@ -8,8 +8,13 @@ body {
   text-align: center;
   height: 100%;
   margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
+  background: linear-gradient(to bottom, #f5f5f5, #999999);
+}
+
+.titulo {
+  position: relative;
+  left: -100%;
+  animation: slideIn 1s ease-in-out forwards;
 }
 
 p {
@@ -36,11 +41,6 @@ aside iframe {
   padding: 1.5em;
 }
 
-.publicidad img {
-  width: 90%;
-  animation: moveGif 3s infinite;
-}
-
 .viajeros div {
   padding: 1em;
 }
@@ -55,6 +55,18 @@ aside iframe {
 
 .asidebar {
   grid-area: publicidad;
+}
+
+.eventos {
+  max-width: 80%;
+  height: auto;
+}
+.eventos .carousel {
+  margin-left: 10em;
+}
+
+.entrevistas-container {
+  max-width: 350px;
 }
 
 .card {
@@ -74,6 +86,14 @@ aside iframe {
   color: #333;
 }
 
+.container_a1 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.container_a1 .container_a2 {
+  margin: 10px;
+}
+
 header {
   background-color: #0D7DED;
   width: 100%;
@@ -81,8 +101,10 @@ header {
 
 footer {
   background-color: #0D7DED;
+  margin-top: 2em;
   bottom: 0;
   width: 100%;
+  padding: 1.5em;
 }
 
 header h1 {
@@ -92,31 +114,33 @@ header h1 {
   font-size: 1.8em;
   font-weight: 500;
   text-align: center;
+  color: rgb(41, 40, 40);
 }
 
 h2 {
   margin: 0;
   padding: 0.2em;
   width: 100%;
-  font-size: 2em;
-  font-weight: 1000;
+  font-size: 2.5em;
+  font-weight: 600;
   margin-bottom: 2em;
   text-align: center;
+  color: #999999;
   background-color: rgb(230, 230, 240);
   transition: color 0.3s ease;
 }
 h2:hover {
-  color: rgb(240, 191, 76);
-  font-size: 2.3em;
+  color: rgb(103, 168, 241);
 }
 
 h3 {
   margin: 0;
   padding: 1em;
   width: 100%;
-  font-size: 1.3em;
+  font-size: 1.8em;
+  font-weight: 480;
   text-align: left;
-  color: rgb(41, 40, 40);
+  color: #444;
 }
 h3:hover {
   color: #0D7DED;
@@ -132,8 +156,9 @@ h3:hover {
 }
 
 h4 {
+  color: #333;
   transition: color 0.3s ease;
-  font-weight: 700;
+  font-weight: 450;
 }
 h4:hover {
   color: #f5f5f5;
@@ -184,25 +209,23 @@ button {
     transform: scale(1);
   }
   to {
-    transform: scale(1.3);
+    transform: scale(1.1);
   }
 }
-.titulo {
-  font-size: 2.8rem;
-  color: #333;
-  transition: all 0.3s ease-in-out;
+@keyframes slideIn {
+  0% {
+    left: -10%;
+  }
+  100% {
+    left: 0;
+  }
 }
-.titulo:hover {
-  color: rgb(240, 191, 76);
-  font-size: 3rem;
-}
-
 @keyframes moveGif {
   0% {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(100px);
+    transform: translateX(10px);
   }
   100% {
     transform: translateX(0);
@@ -215,11 +238,17 @@ article img {
 .publicidad img {
   width: 90%;
   padding: 1.5em;
+  animation: moveGif 3s infinite;
+}
+
+.carousel img {
+  width: 80%;
+  padding: 1.5em;
 }
 
 .viajeros img {
   padding-top: 1.5em;
-  width: 15em;
+  width: 20em;
 }
 
 .entrevistas img {
@@ -258,26 +287,73 @@ article img {
   color: rgb(41, 40, 40);
 }
 
-.viajeros {
-  margin-left: 2.5em;
+.viajeros-links {
   display: flex;
-  flex-direction: row;
-  width: 2.5em;
+  justify-content: space-between;
   gap: 5em;
 }
 
-.entrevistas {
+.entrevistas-container {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
   gap: 5em;
 }
 
-.ruta_evento {
-  display: flex;
-  flex-direction: row;
-  gap: 5em;
+.entrevista {
+  display: block;
+  margin: 5 auto;
+  margin-left: 2em;
+  width: 25%;
+  max-width: 100%;
+  height: auto;
 }
 
+.publicidad2 img {
+  margin-bottom: 50px;
+  width: 370px;
+  height: auto;
+}
+
+.ruta-semana-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5em;
+  margin-left: 2em;
+}
+
+@media (max-width: 768px) {
+  .secciones .viajeros-links {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+  }
+  .secciones .entrevistas-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+  }
+  .secciones .entrevista img {
+    display: block;
+    margin: 5 auto;
+    margin-left: 2em;
+    max-width: 100%;
+    height: auto;
+  }
+  .secciones .ruta-semana-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+    margin-left: 2em;
+  }
+  .secciones .carousel {
+    width: 100%;
+    height: auto;
+    margin-left: 2em;
+  }
+}
 .grid_container {
   width: 100%;
   max-width: -moz-fit-content;
@@ -325,55 +401,5 @@ footer {
     display: grid;
     grid-template-columns: 34% 33% 33%;
     grid-template-areas: "encabezado encabezado encabezado" "title title title" "article1 article2 sidebar" "publicidad publicidad publicidad" "footer footer footer";
-  }
-}
-@media (min-width: 1024px) {
-  .grid_container {
-    text-align: center;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 34% 33% 33%;
-    grid-template-areas: "encabezado encabezado encabezado" "title title title" "article1 article2 sidebar" "publicidad publicidad publicidad" "footer footer footer";
-  }
-}
-.gridcontainer {
-  display: grid;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-  gap: 10px;
-  grid-template-columns: 100%;
-  grid-template-areas: "header" "articulos" "publicidad" "footer";
-}
-
-.header {
-  grid-area: header;
-  background-color: #0D7DED;
-}
-
-.articulo {
-  grid-area: articulos;
-  background-color: rgb(230, 230, 240);
-}
-
-.ruta_evento {
-  padding-top: 1.5em;
-}
-
-.asidebar {
-  grid-area: publicidad;
-  background-color: rgb(230, 230, 240);
-}
-
-.footer {
-  grid-area: footer;
-  background-color: #0D7DED;
-}
-
-@media (min-width: 1024px) {
-  .gridcontainer {
-    grid-template-columns: 75% 23%;
-    grid-template-areas: "header header" "articulos publicidad" "articulos publicidad" "articulos publicidad" "footer footer";
   }
 }/*# sourceMappingURL=style.css.map */

@@ -2,10 +2,12 @@ body {
     text-align: center;
     height: 100%;
     margin: 0;
-    padding: 0;
-    background-color:$gray-background-1 ;
-    
+    background: linear-gradient(to bottom, $colorocho, $colordiez);
 }
+.titulo { 
+    position: relative;
+    left: -100%;
+    animation: slideIn 1s ease-in-out forwards;}
 
 p {
     width: 90%;
@@ -31,11 +33,6 @@ aside iframe {
     padding: 1.5em;
 }
 
-.publicidad img {
-    width: 90%;
-    animation: moveGif 3s infinite;
-    }
-
 .viajeros div {
     padding: 1em;
 }
@@ -49,8 +46,18 @@ aside iframe {
 }
 
 .asidebar {
-    grid-area: publicidad;
-    
+    grid-area: publicidad;    
+}
+.eventos {
+    max-width: 80%;
+    height: auto;  
+    .carousel{
+        margin-left: 10em;
+    }   
+}
+
+.entrevistas-container{
+    max-width: 350px;             
 }
 
 .card {
@@ -72,5 +79,14 @@ aside iframe {
   }
   .entrevistas {
     @include article-text;
-    
   }
+  
+  .container_a1{
+     margin-top: 10px;
+     margin-bottom: 20px; 
+   .container_a2{
+     margin: 10px;
+ }
+}
+
+
